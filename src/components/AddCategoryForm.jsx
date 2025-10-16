@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import EmojiPickerPopup from "./EmojiPickerPOpup";
 import Input from "./Input";
 import { LoaderCircle, Plus, Save } from "lucide-react";
 
