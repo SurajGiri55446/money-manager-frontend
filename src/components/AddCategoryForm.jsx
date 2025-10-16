@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Input from "./Input";
 import { LoaderCircle, Plus, Save } from "lucide-react";
+import EmojiPickerPopup from "./EmojiPickerPopup";
 
 const AddCategoryForm = ({ onAddCategory, isEditing, initialCategoryData }) => {
   const [category, setCategory] = useState({
@@ -54,8 +55,10 @@ const AddCategoryForm = ({ onAddCategory, isEditing, initialCategoryData }) => {
   return (
     <div className={`transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
       <div className="p-6">
+     
+
         <EmojiPickerPopup
-          icon={category.icon}
+         icon={category.icon}
           onSelect={(selectedIcon) => handleChange("icon", selectedIcon)}
         />
 
