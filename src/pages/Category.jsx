@@ -4,10 +4,11 @@ import { useUser } from "../hooks/useUser";
 import CategoryList from "../components/CategoryList";
 import { useEffect, useState } from "react";
 import axiosConfig from "../Util/axiosConfig";
-import { API_ENDPOINTS } from "../util/apiEndpoints";
+
 import toast from "react-hot-toast";
 import Model from "../components/Model";
 import AddCategoryForm from "../components/AddCategoryForm";
+import { API_ENDPOINTS } from "../Util/apiEndpoints";
 
 const Category = () => {
   useUser();
